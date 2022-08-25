@@ -8,6 +8,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatIconModule } from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 /**
  * NgModule that includes all Material modules that are required to serve the demo-app.
@@ -23,6 +26,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatIconModule,
     MatNativeDateModule,
+    MatSnackBarModule,
+    MatCardModule,
+    MatPaginatorModule,
   ],
 })
 export class MaterialModule {}

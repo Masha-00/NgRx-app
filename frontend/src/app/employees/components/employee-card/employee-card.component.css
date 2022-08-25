@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit {
+  margin-right: 10px;
+}

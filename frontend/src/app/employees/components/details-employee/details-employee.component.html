@@ -1,1 +1,12 @@
-<p>details-employee works!</p>
+<h1 mat-dialog-title>Employee Details</h1>
+<div mat-dialog-content>
+  <p>ID: {{ data._id }}</p>
+  <p>Name: {{ data.name }}</p>
+  <p>Email: {{ data.email }}</p>
+  <p>Phone: {{ data.phoneNumber }}</p>
+  <p>Level: {{ data.level }}</p>
+  <p>Data: {{ data.date | date }}</p>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</div>

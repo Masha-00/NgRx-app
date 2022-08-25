@@ -1,0 +1,40 @@
+<mat-card class="example-card">
+  <div class="card">
+    <div>
+      <mat-card-title>{{ employee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.level }}</mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ employee.email }}</p>
+      </mat-card-content>
+    </div>
+    <div>
+      <button
+        class="btn-edit"
+        mat-fab
+        color="primary"
+        aria-label="Example icon button with a delete icon"
+      >
+        <mat-icon>edit</mat-icon>
+      </button>
+
+      <button
+        class="btn-edit"
+        (click)="openDetails(employee)"
+        mat-fab
+        color="primary"
+        aria-label="Example icon button with a delete icon"
+      >
+        <mat-icon>visibility</mat-icon>
+      </button>
+
+      <button
+        (click)="onClickRemoveEmployee(employee._id)"
+        mat-fab
+        color="warn"
+        aria-label="Example icon button with a delete icon"
+      >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-card>

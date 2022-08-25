@@ -1,1 +1,16 @@
-<p>employee-list works!</p>
+<div fxLayout="row wrap" fxLayoutAlign="center">
+  <app-employee-card
+    fxFlex.xs="80"
+    fxFlex.sm="40"
+    fxFlex="25"
+    *ngFor="let employeeItem of employees"
+    [employee]="employeeItem"
+  ></app-employee-card>
+</div>
+<mat-paginator
+  [length]="100"
+  [pageSize]="10"
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  aria-label="Select page"
+>
+</mat-paginator>
